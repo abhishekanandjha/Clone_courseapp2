@@ -1,0 +1,274 @@
+html {
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background: #eee;
+    padding: 0 16px;
+}
+
+header {
+    background-color: #2a4856;
+    margin: auto -16px;
+    padding: 16px 32px;
+    box-shadow: 0 0 10px 0 rgb(0, 0, 0, 0.3);
+}
+
+header h1 {
+    color: #fff;
+    font-family: "New times roman";
+    font-weight: 200;
+}
+
+/* footer {
+    bottom: 0;
+    background-color: #6b6767;
+    text-align: center;
+    width: 100%;
+    height: 2.5rem;
+    position: fixed;
+} 
+*/
+/*  */
+.footer {
+    background-color: #f2f2f2;
+    padding: 20px 0;
+    text-align: center;
+}
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1;
+}
+/*  */
+
+footer p {
+    color: #000000;
+}
+
+.page-container {
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 50px;
+    /* Set the height of the footer */
+}
+
+.imgsize {
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    padding: 0 0 10px 16px;
+}
+.video{
+        background: #fff;
+        border-radius: 7px;
+        box-shadow: 0 2px 5px #ccc;
+        padding: 10px;
+        width: 340px;
+        margin: 16px;
+        float: right;
+        color: #273044;
+}
+.sticky-container {
+    position: relative;
+    /* position: fixed; */
+    bottom: 0;
+    width: 340px;
+    
+    float: right;
+    border-radius: 7px;
+    box-shadow: 0 2px 5px #ccc;
+    padding: 10px;
+    margin: 16px;
+}
+.sticky {
+    position: fixed;
+    bottom: 0;
+    /* Add other styles */
+}
+.txtclr{
+    color: #273044;
+}
+.container-behind {
+    background: #273044;
+    width: 100%;
+    height: 190px;
+    color: #ffffff;
+    border-radius: 7px;
+    box-shadow: 0 2px 5px #ccc;
+    padding: 0 16px;
+    margin: 16px;
+    float: left;
+
+
+    position: relative;
+    z-index: 1;
+}
+.container-overlap {
+    /* position: relative; */
+    /* margin-top: 70px; */
+    z-index: 2;
+}
+
+.containers {
+    /* background: #b0b8c8; */
+    color: #000000;
+    border-radius: 7px;
+    box-shadow: 0 2px 5px #ccc;
+    padding: 0 16px;
+    width: 60%;
+    height: 50px;
+    margin: 16px;
+    float: left;
+    position: relative;
+}
+.containers option {
+    /* Add styles for the individual options */
+    /* background: #b0b8c8; */
+        color: #000000;
+        border-radius: 7px;
+        box-shadow: 0 2px 5px #ccc;
+        /* padding: 0 16px; */
+        width: 60%;
+        height: 50px;
+        margin: 16px;
+        float: left;
+        position: relative;
+        padding: 10px;
+            /* Increase the padding */
+        font-size: 2em;
+            /* Increase the font size */
+}
+.containers:focus {
+    /* Add styles for the focused dropdown menu */
+    outline: none;
+    border-color: #6c63ff;
+    box-shadow: 0 0 0 3px rgba(108, 99, 255, 0.3);
+}
+.containers.large {
+    /* width: 300px; */
+    /* Increase the width */
+    height: 40px;
+    /* Increase the height */
+    /* ...other styles */
+}
+
+
+.box {
+    /* color: #ffffff; */
+    border-radius: 7px;
+    box-shadow: 0 2px 5px #ccc;
+    padding: 0 16px;
+    width: 50%;
+    margin: 16px;
+    float: left;
+    position: relative;
+}
+
+
+
+
+.image-wrapper img {
+    float: left;
+    /* Float the image to the left */
+    margin-right: 10px;
+    /* Add some spacing between the image and the text */
+}
+
+.scrollable-container {
+    height: 300px;
+    /* Set a fixed height or adjust as needed */
+    overflow: auto;
+    /* Enable scrollbars when content overflows */
+}
+
+/* Video dropdown */
+/* select{
+    float: inline-start;
+    width: 50%;
+    height: 50px;
+    position: relative;
+    border: #3b3838;
+    box-shadow: #273044;
+} */
+
+
+
+/* video toggle */
+.video-bar {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    width: 60%;
+}
+
+.video-bar-header {
+    background-color: #f7f7f7;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.toggle-icon {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #c54b4b;
+    background-color: #c26767;
+    transition: transform 0.3s ease;
+}
+
+.toggle-icon.expanded {
+    transform: rotate(180deg);
+}
+
+.video-content {
+    padding: 10px;
+    background-color: #fff;
+}
+
+.video-content div {
+    margin-bottom: 10px;
+}
+
+.video-content h3 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.video-content video {
+    width: 100%;
+    height: auto;
+}
+
+/* videos link lock side by side */
+.title-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title-wrapper h3 {
+    margin-right: auto;
+}
+.title-wrapper h3:hover,
+.title-wrapper h6:hover {
+    cursor: pointer;
+}
